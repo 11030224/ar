@@ -1,0 +1,12 @@
+<model-viewer src="koala3d.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <button class="Hotspot" slot="hotspot-1" data-position="0.02546148493661099m 0.06997208222452356m 0.08271497999277358m" data-normal="0.49895946527241686m -0.36281384825585616m 0.7870232293451321m" data-visibility-attribute="visible"></button><button class="Hotspot" slot="hotspot-2" data-position="-0.005956720714422739m 0.18027090721238537m 0.09920901354486751m" data-normal="0.10237212747673288m 0.15747462433996726m 0.9822024690484512m" data-visibility-attribute="visible"></button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
