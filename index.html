@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="tiger3d.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-2" data-position="0.008962727304068236m 1.7586430085528986m 0.06744097007634436m" data-normal="0.20797491990616562m 0.4419717893738281m 0.8725865974719763m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">肚子</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.0015171571939874228m 1.8276476015814667m 0.08848259943974122m" data-normal="-0.04668316375155716m 0.057460909733889065m 0.9972556974390767m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">臉</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  </body>
+</html>
